@@ -39,3 +39,4 @@ Let's take a look at OpenAI Client we have been calling to stream the chat compl
 
 10. You're almost done! You now need to take that tool call response, and start a new streaming generation request where you concatenate the tool call response at the end of the chat history, and ask the llm to continue. This allows the LLM to continue generating, with the new tool call result context in mind. And that's pretty much it for a basic implementation.
 
+With this, you've got the basics. There is still plenty to add before production grade, but if you've completed this by hand you'll get a solid foundation of how we go from tool in mcp server to actual result in the chat 
